@@ -1,0 +1,29 @@
+
+
+.category-card {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(155, 155, 2);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+
+}
+
+
+
+.category-card-img {
+    width: 40px;
+    position: absolute;
+}
+
+
+.category-card-text {
+    font-weight: bold;
+}
+
+

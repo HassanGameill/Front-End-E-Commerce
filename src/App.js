@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./Pages/Home-Page/HomePage";
+import NavbarLogin from "./Components/Utilities/NavBar-Login/NavbarLogin";
+import Footer from "./Components/Utilities/Footer/Footer";
+import LoginPage from "./Pages/Auth/1-Login-Page/LoginPage";
+import RegisterPage from "./Pages/Auth/2-Resister-Page/RegisterPage";
+import AllCategoryPage from "./Pages/Categories/All-Category-Page/AllCategoryPage";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className='py-5'>
+        <NavbarLogin />
+      </div>
+
+      <BrowserRouter >
+        <Routes >
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage/>} />
+          <Route path="/allCategory" element={<AllCategoryPage/>} />
+        </Routes>
+      </BrowserRouter>
+
+      <Footer />
+      
+      
     </div>
   );
 }

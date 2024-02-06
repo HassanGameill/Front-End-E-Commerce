@@ -1,0 +1,20 @@
+
+
+
+.discount-bg {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+
+
+.discount-img {
+    width: 160px;
+}
+
+.discount-title {
+    font-size: 22px;
+    color: #FFF;
+    font-weight: bold;
+}
